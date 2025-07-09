@@ -319,8 +319,7 @@
               "ViewState": "AgIAAHUAAAAAAAAAAAAcwJQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-27T08:28:06.007Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -336,8 +335,7 @@
               "RelativeToolTip": "PJ_XET_THI_DUA_KHEN_THUONG\\Services\\StudentEvaluationService.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAAcwB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-28T09:19:11.753Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-28T09:19:11.753Z"
             },
             {
               "$type": "Document",
@@ -349,8 +347,7 @@
               "RelativeToolTip": "PJ_XET_THI_DUA_KHEN_THUONG\\Services\\IStudentEvaluationService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-28T09:18:59.599Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-28T09:18:59.599Z"
             },
             {
               "$type": "Document",
@@ -375,8 +372,7 @@
               "RelativeToolTip": "PJ_XET_THI_DUA_KHEN_THUONG\\Repositories\\IStudentEvaluationRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-28T09:07:52.477Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-28T09:07:52.477Z"
             },
             {
               "$type": "Document",
@@ -388,8 +384,7 @@
               "RelativeToolTip": "PJ_XET_THI_DUA_KHEN_THUONG\\Repositories\\StudentEvaluationRepository.cs",
               "ViewState": "AgIAAOMAAAAAAAAAAABgPfIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-28T09:09:01.903Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-28T09:09:01.903Z"
             },
             {
               "$type": "Document",
@@ -401,8 +396,7 @@
               "RelativeToolTip": "PJ_XET_THI_DUA_KHEN_THUONG\\Models\\Entities\\AcademicYears.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T07:39:03.368Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-26T07:39:03.368Z"
             },
             {
               "$type": "Document",
@@ -414,8 +408,7 @@
               "RelativeToolTip": "PJ_XET_THI_DUA_KHEN_THUONG\\Models\\Entities\\Semesters.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T07:39:13.334Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-26T07:39:13.334Z"
             },
             {
               "$type": "Document",
@@ -427,8 +420,7 @@
               "RelativeToolTip": "PJ_XET_THI_DUA_KHEN_THUONG\\Program.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAowCgAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T16:51:05.631Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-25T16:51:05.631Z"
             },
             {
               "$type": "Document",
@@ -440,8 +432,7 @@
               "RelativeToolTip": "PJ_XET_THI_DUA_KHEN_THUONG\\Data\\ApplicationDbContext.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAkwCUAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T16:35:47.481Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-25T16:35:47.481Z"
             },
             {
               "$type": "Document",
@@ -453,8 +444,7 @@
               "RelativeToolTip": "PJ_XET_THI_DUA_KHEN_THUONG\\Models\\DTOs\\EvaluationDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T07:16:01.088Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-26T07:16:01.088Z"
             },
             {
               "$type": "Document",
@@ -466,8 +456,7 @@
               "RelativeToolTip": "PJ_XET_THI_DUA_KHEN_THUONG\\Models\\DTOs\\SaveEvaluationRequestDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-28T09:12:20.444Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-28T09:12:20.444Z"
             },
             {
               "$type": "Document",
@@ -479,8 +468,7 @@
               "RelativeToolTip": "PJ_XET_THI_DUA_KHEN_THUONG\\Models\\DTOs\\EvaluationItemDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-28T09:13:01.695Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-28T09:13:01.695Z"
             },
             {
               "$type": "Document",
@@ -492,8 +480,7 @@
               "RelativeToolTip": "PJ_XET_THI_DUA_KHEN_THUONG\\Repositories\\IEvaluationRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-27T08:27:27.52Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-27T08:27:27.52Z"
             },
             {
               "$type": "Document",
@@ -505,8 +492,7 @@
               "RelativeToolTip": "PJ_XET_THI_DUA_KHEN_THUONG\\Repositories\\IFilterRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T08:05:55.598Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-26T08:05:55.598Z"
             },
             {
               "$type": "Document",
@@ -518,8 +504,7 @@
               "RelativeToolTip": "PJ_XET_THI_DUA_KHEN_THUONG\\Services\\EvaluationService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-27T09:43:15.413Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-27T09:43:15.413Z"
             },
             {
               "$type": "Document",
@@ -531,8 +516,7 @@
               "RelativeToolTip": "PJ_XET_THI_DUA_KHEN_THUONG\\Services\\IEvaluationService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-27T09:42:41.151Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-27T09:42:41.151Z"
             },
             {
               "$type": "Document",
@@ -544,8 +528,7 @@
               "RelativeToolTip": "PJ_XET_THI_DUA_KHEN_THUONG\\Controllers\\EvaluationController.cs",
               "ViewState": "AgIAAB4AAAAAAAAAAAAcwD0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-27T09:44:04.107Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-27T09:44:04.107Z"
             },
             {
               "$type": "Document",
@@ -557,8 +540,7 @@
               "RelativeToolTip": "PJ_XET_THI_DUA_KHEN_THUONG\\Models\\Entities\\ActivityRegistrations.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T09:23:04.717Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-26T09:23:04.717Z"
             },
             {
               "$type": "Document",
@@ -570,8 +552,7 @@
               "RelativeToolTip": "PJ_XET_THI_DUA_KHEN_THUONG\\Models\\Entities\\AdminEvaluationDetails.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-27T03:47:58.362Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-27T03:47:58.362Z"
             },
             {
               "$type": "Document",
@@ -583,8 +564,7 @@
               "RelativeToolTip": "PJ_XET_THI_DUA_KHEN_THUONG\\Models\\Entities\\Activities.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAgwCEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T09:22:01.606Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-26T09:22:01.606Z"
             },
             {
               "$type": "Document",
@@ -596,8 +576,7 @@
               "RelativeToolTip": "PJ_XET_THI_DUA_KHEN_THUONG\\Models\\Entities\\EvaluationEvidences.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T07:14:00.643Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-26T07:14:00.643Z"
             },
             {
               "$type": "Document",
@@ -609,8 +588,7 @@
               "RelativeToolTip": "PJ_XET_THI_DUA_KHEN_THUONG\\Models\\Entities\\EvaluationNotes.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T07:13:43.898Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-26T07:13:43.898Z"
             },
             {
               "$type": "Document",
@@ -622,8 +600,7 @@
               "RelativeToolTip": "PJ_XET_THI_DUA_KHEN_THUONG\\Models\\Entities\\EvaluationDetails.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T07:27:56.185Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-26T07:27:56.185Z"
             },
             {
               "$type": "Document",
@@ -635,8 +612,7 @@
               "RelativeToolTip": "PJ_XET_THI_DUA_KHEN_THUONG\\Models\\Entities\\Evaluations.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T07:08:04.82Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-26T07:08:04.82Z"
             },
             {
               "$type": "Document",
@@ -648,8 +624,7 @@
               "RelativeToolTip": "PJ_XET_THI_DUA_KHEN_THUONG\\Models\\Entities\\EvaluationCriteriaMaster.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T07:22:56.818Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-26T07:22:56.818Z"
             },
             {
               "$type": "Document",
@@ -661,8 +636,7 @@
               "RelativeToolTip": "PJ_XET_THI_DUA_KHEN_THUONG\\Models\\Entities\\EvaluationCriteriaSetDetails.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T07:27:25.586Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-26T07:27:25.586Z"
             },
             {
               "$type": "Document",
@@ -674,8 +648,7 @@
               "RelativeToolTip": "PJ_XET_THI_DUA_KHEN_THUONG\\Models\\Entities\\EvaluationCriteriaSets.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T07:24:01.293Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-26T07:24:01.293Z"
             },
             {
               "$type": "Document",
@@ -687,8 +660,7 @@
               "RelativeToolTip": "PJ_XET_THI_DUA_KHEN_THUONG\\Models\\Entities\\Student.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T10:14:31.867Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-25T10:14:31.867Z"
             },
             {
               "$type": "Document",
@@ -700,8 +672,7 @@
               "RelativeToolTip": "PJ_XET_THI_DUA_KHEN_THUONG\\Models\\Entities\\Classes.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T07:39:36.561Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-26T07:39:36.561Z"
             },
             {
               "$type": "Document",
@@ -713,8 +684,7 @@
               "RelativeToolTip": "PJ_XET_THI_DUA_KHEN_THUONG\\Models\\DTOs\\EvaluationInputDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T07:16:24.871Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-26T07:16:24.871Z"
             },
             {
               "$type": "Document",
@@ -726,8 +696,7 @@
               "RelativeToolTip": "PJ_XET_THI_DUA_KHEN_THUONG\\Models\\DTOs\\EvaluationConfirmDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T07:17:06.771Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-26T07:17:06.771Z"
             },
             {
               "$type": "Document",
@@ -739,8 +708,7 @@
               "RelativeToolTip": "PJ_XET_THI_DUA_KHEN_THUONG\\Controllers\\AuthController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T10:22:52.901Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-25T10:22:52.901Z"
             },
             {
               "$type": "Document",
@@ -752,8 +720,7 @@
               "RelativeToolTip": "PJ_XET_THI_DUA_KHEN_THUONG\\Services\\IAdminEvaluationService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-27T03:54:51.852Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-27T03:54:51.852Z"
             },
             {
               "$type": "Document",
@@ -765,8 +732,7 @@
               "RelativeToolTip": "PJ_XET_THI_DUA_KHEN_THUONG\\Repositories\\FilterRepository.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAAwCkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T08:06:14.161Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-26T08:06:14.161Z"
             },
             {
               "$type": "Document",
@@ -778,8 +744,7 @@
               "RelativeToolTip": "PJ_XET_THI_DUA_KHEN_THUONG\\Repositories\\AuthRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T10:18:03.306Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-25T10:18:03.306Z"
             },
             {
               "$type": "Document",
@@ -791,8 +756,7 @@
               "RelativeToolTip": "PJ_XET_THI_DUA_KHEN_THUONG\\Repositories\\AdminEvaluationRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-28T02:28:54.14Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-28T02:28:54.14Z"
             },
             {
               "$type": "Document",
@@ -804,8 +768,7 @@
               "RelativeToolTip": "PJ_XET_THI_DUA_KHEN_THUONG\\Controllers\\FilterController.cs",
               "ViewState": "AgIAACkAAAAAAAAAAAAkwEYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T08:31:16.772Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-26T08:31:16.772Z"
             },
             {
               "$type": "Document",
@@ -817,8 +780,7 @@
               "RelativeToolTip": "PJ_XET_THI_DUA_KHEN_THUONG\\Repositories\\IAdminEvaluationRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-27T03:51:01.773Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-27T03:51:01.773Z"
             },
             {
               "$type": "Document",
