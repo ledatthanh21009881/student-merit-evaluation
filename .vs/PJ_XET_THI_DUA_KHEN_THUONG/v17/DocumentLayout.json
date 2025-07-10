@@ -3,32 +3,72 @@
   "WorkspaceRootPath": "D:\\Do_an_tot_nghiep\\PJ_XET_THI_DUA_KHEN_THUONG\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D61CEADB-7D26-4DE0-A6A9-BA7B0C7A45C4}|PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG.csproj|d:\\do_an_tot_nghiep\\pj_xet_thi_dua_khen_thuong\\pj_xet_thi_dua_khen_thuong\\helpers\\jwttokenhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D61CEADB-7D26-4DE0-A6A9-BA7B0C7A45C4}|PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG.csproj|solutionrelative:pj_xet_thi_dua_khen_thuong\\helpers\\jwttokenhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D61CEADB-7D26-4DE0-A6A9-BA7B0C7A45C4}|PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG.csproj|d:\\do_an_tot_nghiep\\pj_xet_thi_dua_khen_thuong\\pj_xet_thi_dua_khen_thuong\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D61CEADB-7D26-4DE0-A6A9-BA7B0C7A45C4}|PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG.csproj|solutionrelative:pj_xet_thi_dua_khen_thuong\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D61CEADB-7D26-4DE0-A6A9-BA7B0C7A45C4}|PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG.csproj|d:\\do_an_tot_nghiep\\pj_xet_thi_dua_khen_thuong\\pj_xet_thi_dua_khen_thuong\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D61CEADB-7D26-4DE0-A6A9-BA7B0C7A45C4}|PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG.csproj|solutionrelative:pj_xet_thi_dua_khen_thuong\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D61CEADB-7D26-4DE0-A6A9-BA7B0C7A45C4}|PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG.csproj|d:\\do_an_tot_nghiep\\pj_xet_thi_dua_khen_thuong\\pj_xet_thi_dua_khen_thuong\\services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D61CEADB-7D26-4DE0-A6A9-BA7B0C7A45C4}|PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG.csproj|solutionrelative:pj_xet_thi_dua_khen_thuong\\services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D61CEADB-7D26-4DE0-A6A9-BA7B0C7A45C4}|PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG.csproj|d:\\do_an_tot_nghiep\\pj_xet_thi_dua_khen_thuong\\pj_xet_thi_dua_khen_thuong\\services\\implement\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D61CEADB-7D26-4DE0-A6A9-BA7B0C7A45C4}|PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG.csproj|solutionrelative:pj_xet_thi_dua_khen_thuong\\services\\implement\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D61CEADB-7D26-4DE0-A6A9-BA7B0C7A45C4}|PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG.csproj|d:\\do_an_tot_nghiep\\pj_xet_thi_dua_khen_thuong\\pj_xet_thi_dua_khen_thuong\\repositories\\iaccountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D61CEADB-7D26-4DE0-A6A9-BA7B0C7A45C4}|PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG.csproj|solutionrelative:pj_xet_thi_dua_khen_thuong\\repositories\\iaccountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D61CEADB-7D26-4DE0-A6A9-BA7B0C7A45C4}|PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG.csproj|d:\\do_an_tot_nghiep\\pj_xet_thi_dua_khen_thuong\\pj_xet_thi_dua_khen_thuong\\repositories\\implement\\accountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D61CEADB-7D26-4DE0-A6A9-BA7B0C7A45C4}|PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG.csproj|solutionrelative:pj_xet_thi_dua_khen_thuong\\repositories\\implement\\accountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D61CEADB-7D26-4DE0-A6A9-BA7B0C7A45C4}|PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG.csproj|d:\\do_an_tot_nghiep\\pj_xet_thi_dua_khen_thuong\\pj_xet_thi_dua_khen_thuong\\models\\entities\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D61CEADB-7D26-4DE0-A6A9-BA7B0C7A45C4}|PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG.csproj|solutionrelative:pj_xet_thi_dua_khen_thuong\\models\\entities\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D61CEADB-7D26-4DE0-A6A9-BA7B0C7A45C4}|PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG.csproj|d:\\do_an_tot_nghiep\\pj_xet_thi_dua_khen_thuong\\pj_xet_thi_dua_khen_thuong\\models\\entities\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D61CEADB-7D26-4DE0-A6A9-BA7B0C7A45C4}|PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG.csproj|solutionrelative:pj_xet_thi_dua_khen_thuong\\models\\entities\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D61CEADB-7D26-4DE0-A6A9-BA7B0C7A45C4}|PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG.csproj|d:\\do_an_tot_nghiep\\pj_xet_thi_dua_khen_thuong\\pj_xet_thi_dua_khen_thuong\\models\\entities\\accounts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D61CEADB-7D26-4DE0-A6A9-BA7B0C7A45C4}|PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG.csproj|solutionrelative:pj_xet_thi_dua_khen_thuong\\models\\entities\\accounts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D61CEADB-7D26-4DE0-A6A9-BA7B0C7A45C4}|PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG.csproj|d:\\do_an_tot_nghiep\\pj_xet_thi_dua_khen_thuong\\pj_xet_thi_dua_khen_thuong\\models\\dtos\\loginresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D61CEADB-7D26-4DE0-A6A9-BA7B0C7A45C4}|PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG.csproj|solutionrelative:pj_xet_thi_dua_khen_thuong\\models\\dtos\\loginresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D61CEADB-7D26-4DE0-A6A9-BA7B0C7A45C4}|PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG.csproj|d:\\do_an_tot_nghiep\\pj_xet_thi_dua_khen_thuong\\pj_xet_thi_dua_khen_thuong\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D61CEADB-7D26-4DE0-A6A9-BA7B0C7A45C4}|PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG.csproj|solutionrelative:pj_xet_thi_dua_khen_thuong\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D61CEADB-7D26-4DE0-A6A9-BA7B0C7A45C4}|PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG.csproj|d:\\do_an_tot_nghiep\\pj_xet_thi_dua_khen_thuong\\pj_xet_thi_dua_khen_thuong\\helpers\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D61CEADB-7D26-4DE0-A6A9-BA7B0C7A45C4}|PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG.csproj|solutionrelative:pj_xet_thi_dua_khen_thuong\\helpers\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D61CEADB-7D26-4DE0-A6A9-BA7B0C7A45C4}|PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG.csproj|d:\\do_an_tot_nghiep\\pj_xet_thi_dua_khen_thuong\\pj_xet_thi_dua_khen_thuong\\helpers\\itokengenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D61CEADB-7D26-4DE0-A6A9-BA7B0C7A45C4}|PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG.csproj|solutionrelative:pj_xet_thi_dua_khen_thuong\\helpers\\itokengenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D61CEADB-7D26-4DE0-A6A9-BA7B0C7A45C4}|PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG.csproj|d:\\do_an_tot_nghiep\\pj_xet_thi_dua_khen_thuong\\pj_xet_thi_dua_khen_thuong\\helpers\\jwttokenhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D61CEADB-7D26-4DE0-A6A9-BA7B0C7A45C4}|PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG.csproj|solutionrelative:pj_xet_thi_dua_khen_thuong\\helpers\\jwttokenhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D61CEADB-7D26-4DE0-A6A9-BA7B0C7A45C4}|PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG.csproj|d:\\do_an_tot_nghiep\\pj_xet_thi_dua_khen_thuong\\pj_xet_thi_dua_khen_thuong\\helpers\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D61CEADB-7D26-4DE0-A6A9-BA7B0C7A45C4}|PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG.csproj|solutionrelative:pj_xet_thi_dua_khen_thuong\\helpers\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D61CEADB-7D26-4DE0-A6A9-BA7B0C7A45C4}|PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG.csproj|d:\\do_an_tot_nghiep\\pj_xet_thi_dua_khen_thuong\\pj_xet_thi_dua_khen_thuong\\models\\dtos\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D61CEADB-7D26-4DE0-A6A9-BA7B0C7A45C4}|PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG.csproj|solutionrelative:pj_xet_thi_dua_khen_thuong\\models\\dtos\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D61CEADB-7D26-4DE0-A6A9-BA7B0C7A45C4}|PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG.csproj|d:\\do_an_tot_nghiep\\pj_xet_thi_dua_khen_thuong\\pj_xet_thi_dua_khen_thuong\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{D61CEADB-7D26-4DE0-A6A9-BA7B0C7A45C4}|PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG.csproj|solutionrelative:pj_xet_thi_dua_khen_thuong\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D61CEADB-7D26-4DE0-A6A9-BA7B0C7A45C4}|PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG.csproj|d:\\do_an_tot_nghiep\\pj_xet_thi_dua_khen_thuong\\pj_xet_thi_dua_khen_thuong\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{D61CEADB-7D26-4DE0-A6A9-BA7B0C7A45C4}|PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG.csproj|solutionrelative:pj_xet_thi_dua_khen_thuong\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D61CEADB-7D26-4DE0-A6A9-BA7B0C7A45C4}|PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG.csproj|d:\\do_an_tot_nghiep\\pj_xet_thi_dua_khen_thuong\\pj_xet_thi_dua_khen_thuong\\pj_xet_thi_dua_khen_thuong.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{D61CEADB-7D26-4DE0-A6A9-BA7B0C7A45C4}|PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG.csproj|solutionrelative:pj_xet_thi_dua_khen_thuong\\pj_xet_thi_dua_khen_thuong.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D61CEADB-7D26-4DE0-A6A9-BA7B0C7A45C4}|PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG.csproj|d:\\do_an_tot_nghiep\\pj_xet_thi_dua_khen_thuong\\pj_xet_thi_dua_khen_thuong\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D61CEADB-7D26-4DE0-A6A9-BA7B0C7A45C4}|PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG.csproj|solutionrelative:pj_xet_thi_dua_khen_thuong\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +78,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,89 +86,221 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Do_an_tot_nghiep\\PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG\\Program.cs",
-              "RelativeDocumentMoniker": "PJ_XET_THI_DUA_KHEN_THUONG\\Program.cs",
-              "ToolTip": "D:\\Do_an_tot_nghiep\\PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG\\Program.cs",
-              "RelativeToolTip": "PJ_XET_THI_DUA_KHEN_THUONG\\Program.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAowCgAAAAcAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "D:\\Do_an_tot_nghiep\\PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG\\Services\\IAuthService.cs",
+              "RelativeDocumentMoniker": "PJ_XET_THI_DUA_KHEN_THUONG\\Services\\IAuthService.cs",
+              "ToolTip": "D:\\Do_an_tot_nghiep\\PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG\\Services\\IAuthService.cs",
+              "RelativeToolTip": "PJ_XET_THI_DUA_KHEN_THUONG\\Services\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T16:51:05.631Z",
+              "WhenOpened": "2025-07-10T14:27:23.088Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "D:\\Do_an_tot_nghiep\\PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG\\Services\\Implement\\AuthService.cs",
+              "RelativeDocumentMoniker": "PJ_XET_THI_DUA_KHEN_THUONG\\Services\\Implement\\AuthService.cs",
+              "ToolTip": "D:\\Do_an_tot_nghiep\\PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG\\Services\\Implement\\AuthService.cs*",
+              "RelativeToolTip": "PJ_XET_THI_DUA_KHEN_THUONG\\Services\\Implement\\AuthService.cs*",
+              "ViewState": "AgIAACYAAAAAAAAAAADgv0wAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T14:26:13.936Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IAccountRepository.cs",
+              "DocumentMoniker": "D:\\Do_an_tot_nghiep\\PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG\\Repositories\\IAccountRepository.cs",
+              "RelativeDocumentMoniker": "PJ_XET_THI_DUA_KHEN_THUONG\\Repositories\\IAccountRepository.cs",
+              "ToolTip": "D:\\Do_an_tot_nghiep\\PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG\\Repositories\\IAccountRepository.cs",
+              "RelativeToolTip": "PJ_XET_THI_DUA_KHEN_THUONG\\Repositories\\IAccountRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T14:15:34.102Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "D:\\Do_an_tot_nghiep\\PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "PJ_XET_THI_DUA_KHEN_THUONG\\Data\\ApplicationDbContext.cs",
               "ToolTip": "D:\\Do_an_tot_nghiep\\PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG\\Data\\ApplicationDbContext.cs",
               "RelativeToolTip": "PJ_XET_THI_DUA_KHEN_THUONG\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAkwAcAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAgwA0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-25T16:35:47.481Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ITokenGenerator.cs",
-              "DocumentMoniker": "D:\\Do_an_tot_nghiep\\PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG\\Helpers\\ITokenGenerator.cs",
-              "RelativeDocumentMoniker": "PJ_XET_THI_DUA_KHEN_THUONG\\Helpers\\ITokenGenerator.cs",
-              "ToolTip": "D:\\Do_an_tot_nghiep\\PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG\\Helpers\\ITokenGenerator.cs",
-              "RelativeToolTip": "PJ_XET_THI_DUA_KHEN_THUONG\\Helpers\\ITokenGenerator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAjAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\Do_an_tot_nghiep\\PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "PJ_XET_THI_DUA_KHEN_THUONG\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\Do_an_tot_nghiep\\PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "PJ_XET_THI_DUA_KHEN_THUONG\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T02:13:47.055Z"
+              "WhenOpened": "2025-07-10T14:41:50.764Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Do_an_tot_nghiep\\PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG\\appsettings.json",
-              "RelativeDocumentMoniker": "PJ_XET_THI_DUA_KHEN_THUONG\\appsettings.json",
-              "ToolTip": "D:\\Do_an_tot_nghiep\\PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG\\appsettings.json",
-              "RelativeToolTip": "PJ_XET_THI_DUA_KHEN_THUONG\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-06-25T10:11:25.353Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "JwtTokenHelper.cs",
               "DocumentMoniker": "D:\\Do_an_tot_nghiep\\PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG\\Helpers\\JwtTokenHelper.cs",
               "RelativeDocumentMoniker": "PJ_XET_THI_DUA_KHEN_THUONG\\Helpers\\JwtTokenHelper.cs",
               "ToolTip": "D:\\Do_an_tot_nghiep\\PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG\\Helpers\\JwtTokenHelper.cs",
               "RelativeToolTip": "PJ_XET_THI_DUA_KHEN_THUONG\\Helpers\\JwtTokenHelper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T09:49:49.089Z"
+              "WhenOpened": "2025-07-10T14:30:39.819Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PasswordHasher.cs",
-              "DocumentMoniker": "D:\\Do_an_tot_nghiep\\PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG\\Helpers\\PasswordHasher.cs",
-              "RelativeDocumentMoniker": "PJ_XET_THI_DUA_KHEN_THUONG\\Helpers\\PasswordHasher.cs",
-              "ToolTip": "D:\\Do_an_tot_nghiep\\PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG\\Helpers\\PasswordHasher.cs",
-              "RelativeToolTip": "PJ_XET_THI_DUA_KHEN_THUONG\\Helpers\\PasswordHasher.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "AccountRepository.cs",
+              "DocumentMoniker": "D:\\Do_an_tot_nghiep\\PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG\\Repositories\\Implement\\AccountRepository.cs",
+              "RelativeDocumentMoniker": "PJ_XET_THI_DUA_KHEN_THUONG\\Repositories\\Implement\\AccountRepository.cs",
+              "ToolTip": "D:\\Do_an_tot_nghiep\\PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG\\Repositories\\Implement\\AccountRepository.cs*",
+              "RelativeToolTip": "PJ_XET_THI_DUA_KHEN_THUONG\\Repositories\\Implement\\AccountRepository.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T09:48:44.936Z"
+              "WhenOpened": "2025-07-10T14:17:24.014Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AutoMapperProfile.cs",
-              "DocumentMoniker": "D:\\Do_an_tot_nghiep\\PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG\\Helpers\\AutoMapperProfile.cs",
-              "RelativeDocumentMoniker": "PJ_XET_THI_DUA_KHEN_THUONG\\Helpers\\AutoMapperProfile.cs",
-              "ToolTip": "D:\\Do_an_tot_nghiep\\PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG\\Helpers\\AutoMapperProfile.cs",
-              "RelativeToolTip": "PJ_XET_THI_DUA_KHEN_THUONG\\Helpers\\AutoMapperProfile.cs",
+              "DocumentIndex": 7,
+              "Title": "Users.cs",
+              "DocumentMoniker": "D:\\Do_an_tot_nghiep\\PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG\\Models\\Entities\\Users.cs",
+              "RelativeDocumentMoniker": "PJ_XET_THI_DUA_KHEN_THUONG\\Models\\Entities\\Users.cs",
+              "ToolTip": "D:\\Do_an_tot_nghiep\\PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG\\Models\\Entities\\Users.cs",
+              "RelativeToolTip": "PJ_XET_THI_DUA_KHEN_THUONG\\Models\\Entities\\Users.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAA/wAYAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T15:06:20.893Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Accounts.cs",
+              "DocumentMoniker": "D:\\Do_an_tot_nghiep\\PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG\\Models\\Entities\\Accounts.cs",
+              "RelativeDocumentMoniker": "PJ_XET_THI_DUA_KHEN_THUONG\\Models\\Entities\\Accounts.cs",
+              "ToolTip": "D:\\Do_an_tot_nghiep\\PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG\\Models\\Entities\\Accounts.cs",
+              "RelativeToolTip": "PJ_XET_THI_DUA_KHEN_THUONG\\Models\\Entities\\Accounts.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T15:06:38.995Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "LoginResponseDto.cs",
+              "DocumentMoniker": "D:\\Do_an_tot_nghiep\\PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG\\Models\\DTOs\\LoginResponseDto.cs",
+              "RelativeDocumentMoniker": "PJ_XET_THI_DUA_KHEN_THUONG\\Models\\DTOs\\LoginResponseDto.cs",
+              "ToolTip": "D:\\Do_an_tot_nghiep\\PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG\\Models\\DTOs\\LoginResponseDto.cs",
+              "RelativeToolTip": "PJ_XET_THI_DUA_KHEN_THUONG\\Models\\DTOs\\LoginResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T15:39:19.533Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Roles.cs",
+              "DocumentMoniker": "D:\\Do_an_tot_nghiep\\PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG\\Models\\Entities\\Roles.cs",
+              "RelativeDocumentMoniker": "PJ_XET_THI_DUA_KHEN_THUONG\\Models\\Entities\\Roles.cs",
+              "ToolTip": "D:\\Do_an_tot_nghiep\\PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG\\Models\\Entities\\Roles.cs",
+              "RelativeToolTip": "PJ_XET_THI_DUA_KHEN_THUONG\\Models\\Entities\\Roles.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T15:12:39.019Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Do_an_tot_nghiep\\PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG\\Program.cs",
+              "RelativeDocumentMoniker": "PJ_XET_THI_DUA_KHEN_THUONG\\Program.cs",
+              "ToolTip": "D:\\Do_an_tot_nghiep\\PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG\\Program.cs",
+              "RelativeToolTip": "PJ_XET_THI_DUA_KHEN_THUONG\\Program.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAACkAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T16:51:05.631Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "LoginRequestDto.cs",
+              "DocumentMoniker": "D:\\Do_an_tot_nghiep\\PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG\\Models\\DTOs\\LoginRequestDto.cs",
+              "RelativeDocumentMoniker": "PJ_XET_THI_DUA_KHEN_THUONG\\Models\\DTOs\\LoginRequestDto.cs",
+              "ToolTip": "D:\\Do_an_tot_nghiep\\PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG\\Models\\DTOs\\LoginRequestDto.cs",
+              "RelativeToolTip": "PJ_XET_THI_DUA_KHEN_THUONG\\Models\\DTOs\\LoginRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T15:16:13.174Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Do_an_tot_nghiep\\PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG\\appsettings.json",
+              "RelativeDocumentMoniker": "PJ_XET_THI_DUA_KHEN_THUONG\\appsettings.json",
+              "ToolTip": "D:\\Do_an_tot_nghiep\\PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG\\appsettings.json",
+              "RelativeToolTip": "PJ_XET_THI_DUA_KHEN_THUONG\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-25T10:11:25.353Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": ".gitignore",
+              "DocumentMoniker": "D:\\Do_an_tot_nghiep\\PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG\\.gitignore",
+              "RelativeDocumentMoniker": "PJ_XET_THI_DUA_KHEN_THUONG\\.gitignore",
+              "ToolTip": "D:\\Do_an_tot_nghiep\\PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG\\.gitignore",
+              "RelativeToolTip": "PJ_XET_THI_DUA_KHEN_THUONG\\.gitignore",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-07-09T14:36:10.903Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "D:\\Do_an_tot_nghiep\\PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "PJ_XET_THI_DUA_KHEN_THUONG\\WeatherForecast.cs",
+              "ToolTip": "D:\\Do_an_tot_nghiep\\PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG\\WeatherForecast.cs",
+              "RelativeToolTip": "PJ_XET_THI_DUA_KHEN_THUONG\\WeatherForecast.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T09:47:53.219Z"
+              "WhenOpened": "2025-07-09T14:36:06.755Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "PJ_XET_THI_DUA_KHEN_THUONG.http",
+              "DocumentMoniker": "D:\\Do_an_tot_nghiep\\PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG.http",
+              "RelativeDocumentMoniker": "PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG.http",
+              "ToolTip": "D:\\Do_an_tot_nghiep\\PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG.http",
+              "RelativeToolTip": "PJ_XET_THI_DUA_KHEN_THUONG\\PJ_XET_THI_DUA_KHEN_THUONG.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-07-09T14:35:02.702Z"
             }
           ]
         }

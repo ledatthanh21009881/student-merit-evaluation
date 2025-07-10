@@ -2,9 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using PJ_XET_THI_DUA_KHEN_THUONG.Data;
-using PJ_XET_THI_DUA_KHEN_THUONG.Helpers;
-using PJ_XET_THI_DUA_KHEN_THUONG.Repositories;
-using PJ_XET_THI_DUA_KHEN_THUONG.Services;
+using PJ_XET_THI_DUA_KHEN_THUONG.Models.Repositories.Implement;
+
+using PJ_XET_THI_DUA_KHEN_THUONG.Models.Repositories.Interfaces;
+using PJ_XET_THI_DUA_KHEN_THUONG.Models.Services.Implement;
+
+using PJ_XET_THI_DUA_KHEN_THUONG.Models.Services.Interfaces;
+
+
+//using PJ_XET_THI_DUA_KHEN_THUONG.Helpers;
+//using PJ_XET_THI_DUA_KHEN_THUONG.Repositories;
+//using PJ_XET_THI_DUA_KHEN_THUONG.Services;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -26,20 +34,16 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 // ===== Inject Repository =====
-builder.Services.AddScoped<IAuthRepository, AuthRepository>();
-builder.Services.AddScoped<IFilterRepository, FilterRepository>();
+builder.Services.AddScoped<IAccountRepository, AccountRepository>();
+
 //builder.Services.AddScoped<IActivityCustomRepository, ActivityCustomRepository > ();
-builder.Services.AddScoped<IStudentEvaluationRepository, StudentEvaluationRepository>();
-builder.Services.AddScoped<IAdminEvaluationRepository, AdminEvaluationRepository>();
+
 // ===== Inject Services =====
 builder.Services.AddScoped<IAuthService, AuthService>();
-builder.Services.AddScoped<IFilterService, FilterService>();
-//builder.Services.AddScoped<IActivityCustomService, ActivityCustomService>();
-builder.Services.AddScoped<IAdminEvaluationService, AdminEvaluationService>();
 
 
 // ===== Inject Helper =====
-builder.Services.AddScoped<ITokenGenerator, JwtTokenHelper>();
+
 
 
 // ===== Cấu hình JWT Authentication =====
