@@ -4,7 +4,6 @@
  * Created by: Thành
  * Created on: 2025-07-10
  */
-
 using PJ_XET_THI_DUA_KHEN_THUONG.Models.Entities;
 using PJ_XET_THI_DUA_KHEN_THUONG.Models.Repositories.Interfaces;
 using PJ_XET_THI_DUA_KHEN_THUONG.Models.Services.Interfaces;
@@ -27,24 +26,29 @@ namespace PJ_XET_THI_DUA_KHEN_THUONG.Models.Services.Implement
             _config = config;
         }
 
-        public async Task<LoginResponseDto?> LoginAdminAsync(string username, string password)
+        public async Task<LoginResponseDto?> LoginAsync(string identifier, string password)
         {
-            var account = await _accountRepository.GetByUsernameAsync(username);
+            // Thử đăng nhập bằng Username (admin, khoa, cố vấn)
+            var account = await _accountRepository.GetByUsernameAsync(identifier);
 
-            if (account == null || !BCrypt.Net.BCrypt.Verify(password, account.PasswordHash))
+            if (account != null && account.RoleID is >= 0 and <= 2)
+            {
+                if (BCrypt.Net.BCrypt.Verify(password, account.PasswordHash))
+                    return GenerateToken(account);
+
                 return null;
+            }
 
-            return GenerateToken(account);
-        }
+            // Nếu không, thử bằng MSSV (sinh viên, lớp trưởng)
+            account = await _accountRepository.GetStudentAccountByMSSVAsync(identifier);
 
-        public async Task<LoginResponseDto?> LoginStudentAsync(string mssv, string password)
-        {
-            var account = await _accountRepository.GetStudentAccountByMSSVAsync(mssv);
+            if (account != null && (account.RoleID == 3 || account.RoleID == 4))
+            {
+                if (BCrypt.Net.BCrypt.Verify(password, account.PasswordHash))
+                    return GenerateToken(account);
+            }
 
-            if (account == null || !BCrypt.Net.BCrypt.Verify(password, account.PasswordHash))
-                return null;
-
-            return GenerateToken(account);
+            return null;
         }
 
         private LoginResponseDto GenerateToken(Accounts account)

@@ -4,9 +4,8 @@
  * Created by: Thành
  * Created on: 2025-07-10
  */
-
 using Microsoft.AspNetCore.Mvc;
-using PJ_XET_THI_DUA_KHEN_THUONG.Models.DTOs;
+using PJ_XET_THI_DUA_KHEN_THUONG.Models.DTOs.request;
 using PJ_XET_THI_DUA_KHEN_THUONG.Models.Services.Interfaces;
 
 namespace PJ_XET_THI_DUA_KHEN_THUONG.Controllers
@@ -23,27 +22,14 @@ namespace PJ_XET_THI_DUA_KHEN_THUONG.Controllers
         }
 
         /// <summary>
-        /// Đăng nhập dành cho Admin, Khoa, Cố vấn, Lớp trưởng (bằng Username)
+        /// Đăng nhập duy nhất cho tất cả vai trò: admin, khoa, cố vấn, sinh viên, lớp trưởng
         /// </summary>
-        [HttpPost("login-admin")]
-        public async Task<IActionResult> LoginAdmin([FromBody] LoginRequestDto request)
+        [HttpPost("login")]
+        public async Task<IActionResult> Login([FromBody] LoginRequestDto request)
         {
-            var result = await _authService.LoginAdminAsync(request.Username, request.Password);
+            var result = await _authService.LoginAsync(request.Username, request.Password);
             if (result == null)
-                return Unauthorized(new { message = "Sai tài khoản hoặc mật khẩu" });
-
-            return Ok(result);
-        }
-
-        /// <summary>
-        /// Đăng nhập dành cho Sinh viên (bằng MSSV = IdentityCode)
-        /// </summary>
-        [HttpPost("login-student")]
-        public async Task<IActionResult> LoginStudent([FromBody] LoginRequestDto request)
-        {
-            var result = await _authService.LoginStudentAsync(request.Username, request.Password);
-            if (result == null)
-                return Unauthorized(new { message = "Mã sinh viên hoặc mật khẩu không đúng" });
+                return Unauthorized(new { message = "Sai thông tin đăng nhập" });
 
             return Ok(result);
         }

@@ -11,7 +11,6 @@ namespace PJ_XET_THI_DUA_KHEN_THUONG.Models.Services.Interfaces
 {
     public interface IAuthService
     {
-        Task<LoginResponseDto?> LoginAdminAsync(string username, string password);
-        Task<LoginResponseDto?> LoginStudentAsync(string mssv, string password);
+        Task<LoginResponseDto?> LoginAsync(string identifier, string password);
     }
 }
