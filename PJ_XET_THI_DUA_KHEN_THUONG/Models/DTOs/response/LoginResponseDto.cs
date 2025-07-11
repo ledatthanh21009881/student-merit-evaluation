@@ -4,7 +4,7 @@
  * Created by: Thành
  * Created on: 2025-07-09
  */
-namespace PJ_XET_THI_DUA_KHEN_THUONG.Models.DTOs
+namespace PJ_XET_THI_DUA_KHEN_THUONG.Models.DTOs.response
 {
     public class LoginResponseDto
     {

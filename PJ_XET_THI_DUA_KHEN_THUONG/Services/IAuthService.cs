@@ -5,7 +5,7 @@
  * Created on: 2025-07-10
  */
 
-using PJ_XET_THI_DUA_KHEN_THUONG.Models.DTOs;
+using PJ_XET_THI_DUA_KHEN_THUONG.Models.DTOs.response;
 
 namespace PJ_XET_THI_DUA_KHEN_THUONG.Models.Services.Interfaces
 {
