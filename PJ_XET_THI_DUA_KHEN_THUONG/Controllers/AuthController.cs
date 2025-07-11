@@ -6,7 +6,7 @@
  */
 
 using Microsoft.AspNetCore.Mvc;
-using PJ_XET_THI_DUA_KHEN_THUONG.Models.DTOs;
+using PJ_XET_THI_DUA_KHEN_THUONG.Models.DTOs.request;
 using PJ_XET_THI_DUA_KHEN_THUONG.Models.Services.Interfaces;
 
 namespace PJ_XET_THI_DUA_KHEN_THUONG.Controllers

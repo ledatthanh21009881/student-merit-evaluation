@@ -8,6 +8,12 @@ using PJ_XET_THI_DUA_KHEN_THUONG.Models.Repositories.Interfaces;
 using PJ_XET_THI_DUA_KHEN_THUONG.Models.Services.Implement;
 
 using PJ_XET_THI_DUA_KHEN_THUONG.Models.Services.Interfaces;
+using PJ_XET_THI_DUA_KHEN_THUONG.Repositories;
+using PJ_XET_THI_DUA_KHEN_THUONG.Repositories.Implement;
+using PJ_XET_THI_DUA_KHEN_THUONG.Services;
+using PJ_XET_THI_DUA_KHEN_THUONG.Services.Implement;
+
+
 
 
 //using PJ_XET_THI_DUA_KHEN_THUONG.Helpers;
@@ -35,11 +41,13 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 
 // ===== Inject Repository =====
 builder.Services.AddScoped<IAccountRepository, AccountRepository>();
+builder.Services.AddScoped<ICriteriaRepository, CriteriaRepostiory>();
 
 //builder.Services.AddScoped<IActivityCustomRepository, ActivityCustomRepository > ();
 
 // ===== Inject Services =====
 builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddScoped<ICriteriaService, CriteriaService>();
 
 
 // ===== Inject Helper =====
