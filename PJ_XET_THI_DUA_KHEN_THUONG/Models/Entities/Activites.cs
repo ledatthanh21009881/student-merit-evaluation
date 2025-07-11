@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace PJ_XET_THI_DUA_KHEN_THUONG.Models.Entities
 {
     [Table("Activities")]
-    public class Activity
+    public class Activites
     {
         [Key]
         public int ActivityId { get; set; }

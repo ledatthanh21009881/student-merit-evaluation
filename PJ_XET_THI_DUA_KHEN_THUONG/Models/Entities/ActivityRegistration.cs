@@ -26,7 +26,7 @@ namespace PJ_XET_THI_DUA_KHEN_THUONG.Models.Entities
         public string? Note { get; set; }
 
         // Navigation properties
-        public virtual Activity Activity { get; set; }
+        public virtual Activites Activity { get; set; }
         public virtual Users User { get; set; }
     }
 }
