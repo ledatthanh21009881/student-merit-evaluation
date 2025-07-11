@@ -96,5 +96,44 @@ namespace PJ_XET_THI_DUA_KHEN_THUONG.Services.Implement
                 CriteriaTypeName = criteria.CriteriaType?.CriteriaTypeName ?? ""
             };
         }
+
+        public async Task UpdateAsync(int idCriteria, CriteriaRequest request)
+        {
+            var model = await _criteriaRepository.GetByIdAsync(idCriteria);
+            if (model == null)
+            {
+                throw new Exception("Không tìm thấy tiêu chí.");
+            }
+
+            if (request.ParentID.HasValue && request.ParentID == idCriteria)
+            {
+                throw new Exception("Một tiêu chí không thể là cha của chính nó.");
+            }
+
+            model.CriteriaName = request.CriteriaName;
+            model.Description = request.Description;
+            model.MaxScore = request.MaxScore;
+            model.Level = request.Level;
+            model.IsStudentScored = request.IsStudentScored;
+            model.IsAdminScored = request.IsAdminScored;
+            model.IsUploadOnly = request.IsUploadOnly;
+            model.IsActive = request.IsActive;
+            model.CriteriaTypeID = request.CriteriaTypeID;
+            model.ParentID = request.ParentID;
+
+            await _criteriaRepository.UpdateAsync(model);
+        }
+
+        public async Task<bool> DeleteAsync(int id)
+        {
+            var model = await _criteriaRepository.GetByIdAsync(id);
+            if (model == null)
+            {
+                return false;
+            }
+
+            await _criteriaRepository.DeleteAsync(model);
+            return true;
+        }
     }
 }

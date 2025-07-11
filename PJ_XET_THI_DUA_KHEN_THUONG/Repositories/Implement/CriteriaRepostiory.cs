@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using DocumentFormat.OpenXml.Vml.Office;
+using Microsoft.EntityFrameworkCore;
 using PJ_XET_THI_DUA_KHEN_THUONG.Data;
 using PJ_XET_THI_DUA_KHEN_THUONG.Models.Entities;
 
@@ -32,9 +33,10 @@ namespace PJ_XET_THI_DUA_KHEN_THUONG.Repositories.Implement
 
         }
 
-        public Task DeleteAsync(Criteria criteria)
+        public async Task DeleteAsync(Criteria criteria)
         {
-            throw new NotImplementedException();
+            _context.Criteria.Remove(criteria);
+            await _context.SaveChangesAsync();
         }
 
         public async Task<Criteria?> GetByIdAsync(int id)
@@ -42,9 +44,10 @@ namespace PJ_XET_THI_DUA_KHEN_THUONG.Repositories.Implement
             return await _context.Criteria.FindAsync(id);
         }
 
-        public Task UpdateAsync(Criteria criteria)
+        public async Task UpdateAsync(Criteria entity)
         {
-            throw new NotImplementedException();
+            _context.Criteria.Update(entity);
+            await _context.SaveChangesAsync();
         }
     }
 }

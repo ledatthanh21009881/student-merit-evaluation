@@ -56,5 +56,33 @@ namespace PJ_XET_THI_DUA_KHEN_THUONG.Controllers
             await _criteriaService.CreateAsync(request);
             return Ok(new { message = "Thêm tiêu chí thành công." });
         }
+
+        [HttpPut("update/{id}")]
+        public async Task<IActionResult> Update(int id, [FromBody] CriteriaRequest request)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            await _criteriaService.UpdateAsync(id, request);
+            return Ok(new { message = "Cập nhật tiêu chí thành công." });
+        }
+
+        [HttpPut("delete/{id}")]
+        public async Task<IActionResult> Delete(int id)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            var resut = await _criteriaService.DeleteAsync(id);
+            if(!resut)
+            {
+                return NotFound("Không xóa thành công");
+            }
+            return Ok(new { message = "Xóa tiêu chí thành công." });
+        }
     }
 }

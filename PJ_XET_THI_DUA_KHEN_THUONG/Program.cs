@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using PJ_XET_THI_DUA_KHEN_THUONG.Data;
+using PJ_XET_THI_DUA_KHEN_THUONG.Middlewares;
 using PJ_XET_THI_DUA_KHEN_THUONG.Models.Repositories.Implement;
 
 using PJ_XET_THI_DUA_KHEN_THUONG.Models.Repositories.Interfaces;
@@ -84,6 +85,8 @@ app.UseHttpsRedirection();
 app.UseCors(MyAllowSpecificOrigins);
 app.UseAuthentication();
 app.UseAuthorization();
+app.UseMiddleware<ExceptionMiddleware>();
+
 
 if (app.Environment.IsDevelopment())
 {
