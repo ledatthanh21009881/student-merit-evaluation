@@ -30,6 +30,21 @@ namespace PJ_XET_THI_DUA_KHEN_THUONG.Controllers
             }
         }
 
+        [HttpGet("all-flat")]
+        public async Task<IActionResult> GetAllCriteria_Flat()
+        {
+            try
+            {
+                var criteriaList = await _criteriaService.GetCriteriaFlatAsync();
+                return Ok(criteriaList);
+            }
+            catch (Exception ex)
+            {
+                // Log the exception (ex) here if needed
+                return StatusCode(500, new { message = "An error occurred while retrieving criteria.", error = ex.Message });
+            }
+        }
+
         [HttpGet("{id}")]
         public async Task<IActionResult> GetCriteriaByID(int id)
         {
@@ -69,7 +84,7 @@ namespace PJ_XET_THI_DUA_KHEN_THUONG.Controllers
             return Ok(new { message = "Cập nhật tiêu chí thành công." });
         }
 
-        [HttpPut("delete/{id}")]
+        [HttpDelete("delete/{id}")]
         public async Task<IActionResult> Delete(int id)
         {
             if (!ModelState.IsValid)
@@ -83,6 +98,20 @@ namespace PJ_XET_THI_DUA_KHEN_THUONG.Controllers
                 return NotFound("Không xóa thành công");
             }
             return Ok(new { message = "Xóa tiêu chí thành công." });
+        }
+
+        [HttpGet("by-type")]
+        public async Task<IActionResult> GetByCriteriaType([FromQuery] int criteriaTypeId)
+        {
+            try
+            {
+                var result = await _criteriaService.GetByCriteriaTypeAsync(criteriaTypeId);
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = "An error occurred while retrieving criteria by type.", error = ex.Message });
+            }
         }
     }
 }

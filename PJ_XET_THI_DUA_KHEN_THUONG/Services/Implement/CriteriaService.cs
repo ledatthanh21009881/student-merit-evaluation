@@ -37,6 +37,8 @@ namespace PJ_XET_THI_DUA_KHEN_THUONG.Services.Implement
                         IsUploadOnly = c.IsUploadOnly,
                         IsActive = c.IsActive,
                         CriteriaTypeName = c.CriteriaType?.CriteriaTypeName,
+                        ParentID = c.ParentCriteria?.CriteriaID,
+                        ParentName = c.ParentCriteria?.CriteriaName,
                         Children = BuildTree(c.CriteriaID)
                     })
                     .ToList();
@@ -91,7 +93,7 @@ namespace PJ_XET_THI_DUA_KHEN_THUONG.Services.Implement
                 IsAdminScored = criteria.IsAdminScored,
                 IsUploadOnly = criteria.IsUploadOnly,
                 IsActive = criteria.IsActive,
-                ParentID = criteria.ParentCriteria?.ParentID,
+                ParentID = criteria.ParentCriteria?.CriteriaID,
                 ParentName = criteria.ParentCriteria?.CriteriaName,
                 CriteriaTypeName = criteria.CriteriaType?.CriteriaTypeName ?? ""
             };
@@ -134,6 +136,50 @@ namespace PJ_XET_THI_DUA_KHEN_THUONG.Services.Implement
 
             await _criteriaRepository.DeleteAsync(model);
             return true;
+        }
+
+        public async Task<List<CriteriaResponse>> GetCriteriaFlatAsync()
+        {
+            var all = await _criteriaRepository.GetAllCriteriaAsync();
+
+            var result = all.Select(criteria => new CriteriaResponse
+            {
+                CriteriaID = criteria.CriteriaID,
+                CriteriaName = criteria.CriteriaName,
+                Description = criteria.Description,
+                MaxScore = criteria.MaxScore,
+                Level = criteria.Level,
+                IsStudentScored = criteria.IsStudentScored,
+                IsAdminScored = criteria.IsAdminScored,
+                IsUploadOnly = criteria.IsUploadOnly,
+                IsActive = criteria.IsActive,
+                ParentID = criteria.ParentCriteria?.CriteriaID,
+                ParentName = criteria.ParentCriteria?.CriteriaName,
+                CriteriaTypeName = criteria.CriteriaType?.CriteriaTypeName ?? ""
+            }).ToList();
+
+            return result;
+        }
+
+        public async Task<List<CriteriaResponse>> GetByCriteriaTypeAsync(int criteriaTypeId)
+        {
+            var criteriaList = await _criteriaRepository.GetByCriteriaTypeAsync(criteriaTypeId);
+
+            return criteriaList.Select(criteria => new CriteriaResponse
+            {
+                CriteriaID = criteria.CriteriaID,
+                CriteriaName = criteria.CriteriaName,
+                Description = criteria.Description,
+                MaxScore = criteria.MaxScore,
+                Level = criteria.Level,
+                IsStudentScored = criteria.IsStudentScored,
+                IsAdminScored = criteria.IsAdminScored,
+                IsUploadOnly = criteria.IsUploadOnly,
+                IsActive = criteria.IsActive,
+                ParentID = criteria.ParentCriteria?.CriteriaID,
+                ParentName = criteria.ParentCriteria?.CriteriaName,
+                CriteriaTypeName = criteria.CriteriaType?.CriteriaTypeName ?? ""
+            }).ToList();
         }
     }
 }

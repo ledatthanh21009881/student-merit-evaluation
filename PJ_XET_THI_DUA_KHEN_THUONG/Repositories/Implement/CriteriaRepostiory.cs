@@ -22,6 +22,7 @@ namespace PJ_XET_THI_DUA_KHEN_THUONG.Repositories.Implement
         {
             return await _context.Criteria
                 .Include(c => c.CriteriaType)
+                .Include(c => c.ParentCriteria)
                 .Include(c => c.SubCriteria)
                 .ToListAsync();
         }
@@ -41,13 +42,27 @@ namespace PJ_XET_THI_DUA_KHEN_THUONG.Repositories.Implement
 
         public async Task<Criteria?> GetByIdAsync(int id)
         {
-            return await _context.Criteria.FindAsync(id);
+            return await _context.Criteria
+                .Include(c => c.CriteriaType)
+                .Include(c => c.ParentCriteria)
+                .FirstOrDefaultAsync(c => c.CriteriaID == id);
         }
+
 
         public async Task UpdateAsync(Criteria entity)
         {
             _context.Criteria.Update(entity);
             await _context.SaveChangesAsync();
+        }
+
+        public async Task<List<Criteria>> GetByCriteriaTypeAsync(int criteriaTypeId, CancellationToken ct = default)
+        {
+            return await _context.Criteria
+                .Include(c => c.CriteriaType)
+                .Include(c => c.ParentCriteria)
+                .Include(c => c.SubCriteria)
+                .Where(c => c.CriteriaTypeID == criteriaTypeId)
+                .ToListAsync(ct);
         }
     }
 }

@@ -9,5 +9,7 @@ namespace PJ_XET_THI_DUA_KHEN_THUONG.Repositories
         Task AddAsync(Criteria criteria);
         Task UpdateAsync(Criteria criteria);
         Task DeleteAsync(Criteria criteria);
+        Task<List<Criteria>> GetByCriteriaTypeAsync(int criteriaTypeId, CancellationToken ct = default);
+
     }
 }
