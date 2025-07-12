@@ -49,6 +49,8 @@ builder.Services.AddScoped<ICriteriaRepository, CriteriaRepostiory>();
 // ===== Inject Services =====
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<ICriteriaService, CriteriaService>();
+builder.Services.AddScoped<IActivityCategoryRepository, ActivityCategoryRepository>();
+builder.Services.AddScoped<IActivityCategoryService, ActivityCategoryService>();
 
 
 // ===== Inject Helper =====
