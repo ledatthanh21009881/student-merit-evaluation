@@ -43,12 +43,14 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 // ===== Inject Repository =====
 builder.Services.AddScoped<IAccountRepository, AccountRepository>();
 builder.Services.AddScoped<ICriteriaRepository, CriteriaRepostiory>();
+builder.Services.AddScoped<ICriteriaTypeRepository, CriteriaTypeRepository>(); 
 
 //builder.Services.AddScoped<IActivityCustomRepository, ActivityCustomRepository > ();
 
 // ===== Inject Services =====
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<ICriteriaService, CriteriaService>();
+builder.Services.AddScoped<ICriteriaTypeService, CriteriaTypeService>();
 builder.Services.AddScoped<IActivityCategoryRepository, ActivityCategoryRepository>();
 builder.Services.AddScoped<IActivityCategoryService, ActivityCategoryService>();
 

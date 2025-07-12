@@ -38,6 +38,12 @@ namespace PJ_XET_THI_DUA_KHEN_THUONG.Data
                 .HasForeignKey(c => c.ParentID) // khóa ngoại trỏ đến tiêu chỉ cha
                 .OnDelete(DeleteBehavior.Restrict);
 
+            // Cấu hình liên kết với CriteriaType
+            modelBuilder.Entity<Criteria>()
+                .HasOne(c => c.CriteriaType)
+                .WithMany(ct => ct.CriteriaList)
+                .HasForeignKey(c => c.CriteriaTypeID)
+                .OnDelete(DeleteBehavior.Restrict);
 
             // Cấu hình khóa chính kép cho ActivityRegistration
             modelBuilder.Entity<ActivityRegistration>()
@@ -54,6 +60,8 @@ namespace PJ_XET_THI_DUA_KHEN_THUONG.Data
                 .HasOne(ar => ar.User)
                 .WithMany(u => u.ActivityRegistrations)
                 .HasForeignKey(ar => ar.UserID);
+
+
 
             base.OnModelCreating(modelBuilder);
         }
