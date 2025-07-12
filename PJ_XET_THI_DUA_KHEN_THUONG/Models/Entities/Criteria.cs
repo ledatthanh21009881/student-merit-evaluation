@@ -41,6 +41,11 @@ namespace PJ_XET_THI_DUA_KHEN_THUONG.Models.Entities
         public virtual Criteria? ParentCriteria { get; set; } = null;
 
         public virtual ICollection<Criteria> SubCriteria { get; set; } = new List<Criteria>();
+
+        public override string? ToString()
+        {
+            return base.ToString();
+        }
     }
 
 }
