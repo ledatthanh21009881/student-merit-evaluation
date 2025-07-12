@@ -14,6 +14,7 @@ namespace PJ_XET_THI_DUA_KHEN_THUONG.Services
         public Task UpdateAsync(int idCriteria, CriteriaRequest request);
         public Task<bool> DeleteAsync(int id);
         public Task<CriteriaResponse?> GetCriteriaByID(int Id);
+        public Task<List<CriteriaResponse>> GetByCriteriaTypeAsync(int criteriaTypeId);
     }
 
 }

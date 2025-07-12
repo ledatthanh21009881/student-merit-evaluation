@@ -160,5 +160,26 @@ namespace PJ_XET_THI_DUA_KHEN_THUONG.Services.Implement
 
             return result;
         }
+
+        public async Task<List<CriteriaResponse>> GetByCriteriaTypeAsync(int criteriaTypeId)
+        {
+            var criteriaList = await _criteriaRepository.GetByCriteriaTypeAsync(criteriaTypeId);
+
+            return criteriaList.Select(criteria => new CriteriaResponse
+            {
+                CriteriaID = criteria.CriteriaID,
+                CriteriaName = criteria.CriteriaName,
+                Description = criteria.Description,
+                MaxScore = criteria.MaxScore,
+                Level = criteria.Level,
+                IsStudentScored = criteria.IsStudentScored,
+                IsAdminScored = criteria.IsAdminScored,
+                IsUploadOnly = criteria.IsUploadOnly,
+                IsActive = criteria.IsActive,
+                ParentID = criteria.ParentCriteria?.CriteriaID,
+                ParentName = criteria.ParentCriteria?.CriteriaName,
+                CriteriaTypeName = criteria.CriteriaType?.CriteriaTypeName ?? ""
+            }).ToList();
+        }
     }
 }

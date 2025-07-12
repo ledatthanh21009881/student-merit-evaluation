@@ -99,5 +99,19 @@ namespace PJ_XET_THI_DUA_KHEN_THUONG.Controllers
             }
             return Ok(new { message = "Xóa tiêu chí thành công." });
         }
+
+        [HttpGet("by-type")]
+        public async Task<IActionResult> GetByCriteriaType([FromQuery] int criteriaTypeId)
+        {
+            try
+            {
+                var result = await _criteriaService.GetByCriteriaTypeAsync(criteriaTypeId);
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = "An error occurred while retrieving criteria by type.", error = ex.Message });
+            }
+        }
     }
 }
