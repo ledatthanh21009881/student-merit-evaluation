@@ -43,7 +43,9 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 // ===== Inject Repository =====
 builder.Services.AddScoped<IAccountRepository, AccountRepository>();
 builder.Services.AddScoped<ICriteriaRepository, CriteriaRepostiory>();
-builder.Services.AddScoped<ICriteriaTypeRepository, CriteriaTypeRepository>(); 
+builder.Services.AddScoped<ICriteriaTypeRepository, CriteriaTypeRepository>();
+builder.Services.AddScoped<ICriteriaFormRepository, CriteriaFormRepository>();
+builder.Services.AddScoped<IFormTimelineRepository, FormTimelineRepository>();
 
 //builder.Services.AddScoped<IActivityCustomRepository, ActivityCustomRepository > ();
 

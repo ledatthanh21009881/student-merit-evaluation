@@ -22,6 +22,8 @@ namespace PJ_XET_THI_DUA_KHEN_THUONG.Data
         public DbSet<CriteriaType> CriteriaTypes { get; set; }
 
         public DbSet<Criteria> Criteria { get; set; }
+        public DbSet<CriteriaForm> CriteriaForms { get; set; }
+        public DbSet<FormTimeline> FormTimelines { get; set; }
 
         public DbSet<Activites> Activities { get; set; }
 
