@@ -19,7 +19,7 @@ namespace PJ_XET_THI_DUA_KHEN_THUONG.Repositories.Implement
                 .Include(cf => cf.Criterias)
                     .ThenInclude(c => c.CriteriaType)
                 .Include(cf => cf.FormTimelines)
-                .OrderByDescending(cf => cf.CriteriaFormID)
+                //.OrderByDescending(cf => cf.CriteriaFormID)
                 .ToListAsync();
         }
 
@@ -66,6 +66,24 @@ namespace PJ_XET_THI_DUA_KHEN_THUONG.Repositories.Implement
             await _context.SaveChangesAsync();
         }
 
-        
+        public async Task<bool> ExistsByNameAsync(string formName, int academicYear, string semester)
+        {
+            return await _context.CriteriaForms
+                .AnyAsync(cf => cf.FormName.ToLower() == formName.ToLower() 
+                            && cf.AcademicYearStart == academicYear 
+                            && cf.Semester.ToLower() == semester.ToLower());
+        }
+
+        /**
+         * Kiểm tra xem tên biểu mẫu đã tồn tại hay chưa, ngoại trừ ID đã cho
+        **/
+        public async Task<bool> ExistsByNameAsync(string formName, int academicYear, string semester, int excludeId)
+        {
+            return await _context.CriteriaForms
+                .AnyAsync(cf => cf.FormName.ToLower() == formName.ToLower() 
+                            && cf.AcademicYearStart == academicYear 
+                            && cf.Semester.ToLower() == semester.ToLower()
+                            && cf.CriteriaFormID != excludeId);
+        }
     }
 }

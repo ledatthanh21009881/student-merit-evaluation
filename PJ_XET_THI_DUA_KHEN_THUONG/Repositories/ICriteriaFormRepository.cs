@@ -10,6 +10,7 @@ namespace PJ_XET_THI_DUA_KHEN_THUONG.Repositories
         Task AddAsync(CriteriaForm criteriaForm);
         Task UpdateAsync(CriteriaForm criteriaForm);
         Task DeleteAsync(CriteriaForm criteriaForm);
-        
+        Task<bool> ExistsByNameAsync(string formName, int academicYear, string semester);
+        Task<bool> ExistsByNameAsync(string formName, int academicYear, string semester, int excludeId);
     }
 }

@@ -55,7 +55,7 @@ builder.Services.AddScoped<ICriteriaService, CriteriaService>();
 builder.Services.AddScoped<ICriteriaTypeService, CriteriaTypeService>();
 builder.Services.AddScoped<IActivityCategoryRepository, ActivityCategoryRepository>();
 builder.Services.AddScoped<IActivityCategoryService, ActivityCategoryService>();
-
+builder.Services.AddScoped<ICriteriaFormService, CriteriaFormService>();
 
 // ===== Inject Helper =====
 
