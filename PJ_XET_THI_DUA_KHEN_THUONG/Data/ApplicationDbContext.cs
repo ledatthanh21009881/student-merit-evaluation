@@ -45,6 +45,40 @@ namespace PJ_XET_THI_DUA_KHEN_THUONG.Data
                 .HasForeignKey(c => c.CriteriaTypeID)
                 .OnDelete(DeleteBehavior.Restrict);
 
+            // Cấu hình mối quan hệ N-N Criteria với CriteriaForm
+            modelBuilder.Entity<CriteriaForm>()
+                .HasMany(cf => cf.Criterias)
+                .WithMany(c => c.CriteriaForms)
+                .UsingEntity<Dictionary<string, object>>(
+
+                  "Form_Criterias", // Tên bảng liên kết
+
+                    left => left
+                        .HasOne<Criteria>()
+                        .WithMany()
+                        .HasForeignKey("CriteriaID")
+                        .OnDelete(DeleteBehavior.Cascade), // Xóa liên kết khi Criteria bị xóa
+
+                    right => right
+                        .HasOne<CriteriaForm>()
+                        .WithMany()
+                        .HasForeignKey("CriteriaFormID")
+                        .OnDelete(DeleteBehavior.Cascade), // Xóa liên kết khi CriteriaForm bị xóa
+                    
+                    join =>
+                    {
+                        join.HasKey("CriteriaFormID", "CriteriaID"); // Khóa chính của bảng liên kết
+                        join.ToTable("Form_Criterias"); // Tên bảng liên kết
+                    }
+                );
+
+            // Cấu hình mqh 1-n CriteriaForm với FormTimeline
+            modelBuilder.Entity<FormTimeline>()
+                .HasOne(ft => ft.CriteriaForm) // 1 form tiêu chí có thể có nhiều mốc thời gian
+                .WithMany(cf => cf.FormTimelines) // mỗi mốc thời gian thuộc về một form tiêu chí
+                .HasForeignKey(ft => ft.CriteriaFormID)
+                .OnDelete(DeleteBehavior.Cascade);
+
             // Cấu hình khóa chính kép cho ActivityRegistration
             modelBuilder.Entity<ActivityRegistration>()
                 .HasKey(ar => new { ar.ActivityId, ar.UserID });
