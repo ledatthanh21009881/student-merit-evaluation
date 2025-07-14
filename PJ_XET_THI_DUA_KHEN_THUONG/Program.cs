@@ -46,6 +46,8 @@ builder.Services.AddScoped<ICriteriaRepository, CriteriaRepostiory>();
 builder.Services.AddScoped<ICriteriaTypeRepository, CriteriaTypeRepository>();
 builder.Services.AddScoped<ICriteriaFormRepository, CriteriaFormRepository>();
 builder.Services.AddScoped<IFormTimelineRepository, FormTimelineRepository>();
+builder.Services.AddScoped<IActivityRepository, ActivityRepository>();
+builder.Services.AddScoped<IActivityRegistrationRepository, ActivityRegistrationRepository>();
 
 //builder.Services.AddScoped<IActivityCustomRepository, ActivityCustomRepository > ();
 
@@ -53,12 +55,8 @@ builder.Services.AddScoped<IFormTimelineRepository, FormTimelineRepository>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<ICriteriaService, CriteriaService>();
 builder.Services.AddScoped<ICriteriaTypeService, CriteriaTypeService>();
-builder.Services.AddScoped<IActivityCategoryRepository, ActivityCategoryRepository>();
-builder.Services.AddScoped<IActivityCategoryService, ActivityCategoryService>();
 builder.Services.AddScoped<ICriteriaFormService, CriteriaFormService>();
-builder.Services.AddScoped<IActivityRepository, ActivityRepository>();
 builder.Services.AddScoped<IActivitiesService, ActivitiesService>();
-builder.Services.AddScoped<IActivityRegistrationRepository, ActivityRegistrationRepository>();
 builder.Services.AddScoped<IActivityRegistrationService, ActivityRegistrationService>();
 
 
