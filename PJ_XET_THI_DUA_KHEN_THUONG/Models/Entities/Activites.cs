@@ -15,8 +15,6 @@ namespace PJ_XET_THI_DUA_KHEN_THUONG.Models.Entities
 
         public string? Description { get; set; }
 
-        public int CategoryID { get; set; }
-
         public int AccumulatedScore { get; set; }
 
         public int Quantity { get; set; }
@@ -33,8 +31,6 @@ namespace PJ_XET_THI_DUA_KHEN_THUONG.Models.Entities
 
         public DateTime? AttendanceEnd { get; set; }
 
-        public int CreatedBy { get; set; }
-
         public bool ShowInApp { get; set; }
 
         public bool AllowEarlyRegistration { get; set; }
@@ -42,10 +38,10 @@ namespace PJ_XET_THI_DUA_KHEN_THUONG.Models.Entities
         public bool IsActive { get; set; }
 
         // Là navigation property: giúp EF hiểu mối quan hệ và lấy dữ liệu liên kết giữa bảng.
-        [ForeignKey("CategoryID")]
-        public virtual ActivityCategory ActivityCategory { get; set; }
+        // Mối quan hệ hiều - Nhiều với Criteria thông qua ActivityCriteria.
+        public ICollection<ActivityCriteria> ActivityCriterias { get; set; } = new List<ActivityCriteria>();
 
-        // Navigation property cho mối quan hệ với ActivityRegistration
+        // Navigation property cho mối quan hệ với ActivityRegistration.
         public virtual ICollection<ActivityRegistration> ActivityRegistrations { get; set; }
 
     }

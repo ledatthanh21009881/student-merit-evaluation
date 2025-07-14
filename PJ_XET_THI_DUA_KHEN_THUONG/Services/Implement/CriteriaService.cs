@@ -1,10 +1,7 @@
-﻿using DocumentFormat.OpenXml.Presentation;
-using DocumentFormat.OpenXml.Vml.Office;
-using PJ_XET_THI_DUA_KHEN_THUONG.Models.DTOs.request;
+﻿using PJ_XET_THI_DUA_KHEN_THUONG.Models.DTOs.request;
 using PJ_XET_THI_DUA_KHEN_THUONG.Models.DTOs.response;
 using PJ_XET_THI_DUA_KHEN_THUONG.Models.Entities;
 using PJ_XET_THI_DUA_KHEN_THUONG.Repositories;
-using System.Linq;
 
 namespace PJ_XET_THI_DUA_KHEN_THUONG.Services.Implement
 {
@@ -77,7 +74,7 @@ namespace PJ_XET_THI_DUA_KHEN_THUONG.Services.Implement
         public async Task<CriteriaResponse?> GetCriteriaByID(int Id)
         {
             var criteria = await _criteriaRepository.GetByIdAsync(Id);
-            if(criteria == null)
+            if (criteria == null)
             {
                 throw new Exception("Không tìm thấy tiêu chí nào.");
             }

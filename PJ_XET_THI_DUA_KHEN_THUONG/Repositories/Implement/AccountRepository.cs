@@ -5,10 +5,10 @@
  * Created on: 2025-07-10
  */
 
+using Microsoft.EntityFrameworkCore;
 using PJ_XET_THI_DUA_KHEN_THUONG.Data;
 using PJ_XET_THI_DUA_KHEN_THUONG.Models.Entities;
 using PJ_XET_THI_DUA_KHEN_THUONG.Models.Repositories.Interfaces;
-using Microsoft.EntityFrameworkCore;
 
 namespace PJ_XET_THI_DUA_KHEN_THUONG.Models.Repositories.Implement
 {

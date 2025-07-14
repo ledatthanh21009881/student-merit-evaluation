@@ -1,6 +1,4 @@
-﻿using System.Diagnostics;
-using DocumentFormat.OpenXml.Bibliography;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using PJ_XET_THI_DUA_KHEN_THUONG.Models.Entities;
 
 
@@ -25,9 +23,10 @@ namespace PJ_XET_THI_DUA_KHEN_THUONG.Data
 
         public DbSet<Activites> Activities { get; set; }
 
-        public DbSet<ActivityCategory> ActivityCategories { get; set; }
-
         public DbSet<ActivityRegistration> ActivityRegistrations { get; set; }
+
+        public DbSet<ActivityCriteria> ActivityCriteria { get; set; }
+
 
         // config relationships for criteria
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -38,14 +37,13 @@ namespace PJ_XET_THI_DUA_KHEN_THUONG.Data
                 .HasForeignKey(c => c.ParentID) // khóa ngoại trỏ đến tiêu chỉ cha
                 .OnDelete(DeleteBehavior.Restrict);
 
-
             // Cấu hình khóa chính kép cho ActivityRegistration
             modelBuilder.Entity<ActivityRegistration>()
                 .HasKey(ar => new { ar.ActivityId, ar.UserID });
 
             // Cấu hình liên kết với Activity
             modelBuilder.Entity<ActivityRegistration>()
-                .HasOne(ar => ar.Activity)
+                .HasOne(ar => ar.Activities)
                 .WithMany(a => a.ActivityRegistrations)
                 .HasForeignKey(ar => ar.ActivityId);
 
@@ -54,6 +52,20 @@ namespace PJ_XET_THI_DUA_KHEN_THUONG.Data
                 .HasOne(ar => ar.User)
                 .WithMany(u => u.ActivityRegistrations)
                 .HasForeignKey(ar => ar.UserID);
+
+            // Cấu hình liên kết nhiều nhiều giữa Activities và Criteria thông qua ActivityCriteria
+            modelBuilder.Entity<ActivityCriteria>()
+                .HasKey(ac => new { ac.ActivityId, ac.CriteriaID });
+
+            modelBuilder.Entity<ActivityCriteria>()
+                .HasOne(ac => ac.Activities)
+                .WithMany(a => a.ActivityCriterias)
+                .HasForeignKey(ac => ac.ActivityId);
+
+            modelBuilder.Entity<ActivityCriteria>()
+                .HasOne(ac => ac.Criteria)
+                .WithMany(c => c.ActivityCriterias)
+                .HasForeignKey(ac => ac.CriteriaID);
 
             base.OnModelCreating(modelBuilder);
         }

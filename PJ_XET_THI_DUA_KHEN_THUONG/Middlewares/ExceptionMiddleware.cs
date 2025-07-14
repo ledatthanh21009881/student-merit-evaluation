@@ -18,7 +18,7 @@ namespace PJ_XET_THI_DUA_KHEN_THUONG.Middlewares
         {
             try
             {
-                await _next(context); 
+                await _next(context);
             }
             catch (Exception ex)
             {

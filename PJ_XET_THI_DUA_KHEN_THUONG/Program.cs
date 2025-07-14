@@ -49,8 +49,10 @@ builder.Services.AddScoped<ICriteriaRepository, CriteriaRepostiory>();
 // ===== Inject Services =====
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<ICriteriaService, CriteriaService>();
-builder.Services.AddScoped<IActivityCategoryRepository, ActivityCategoryRepository>();
-builder.Services.AddScoped<IActivityCategoryService, ActivityCategoryService>();
+builder.Services.AddScoped<IActivityRepository, ActivityRepository>();
+builder.Services.AddScoped<IActivitiesService, ActivitiesService>();
+builder.Services.AddScoped<IActivityRegistrationRepository, ActivityRegistrationRepository>();
+builder.Services.AddScoped<IActivityRegistrationService, ActivityRegistrationService>();
 
 
 // ===== Inject Helper =====

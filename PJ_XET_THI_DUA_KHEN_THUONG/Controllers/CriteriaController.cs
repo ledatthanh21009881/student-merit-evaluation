@@ -63,7 +63,7 @@ namespace PJ_XET_THI_DUA_KHEN_THUONG.Controllers
         [HttpPost("create")]
         public async Task<IActionResult> Create([FromBody] CriteriaRequest request)
         {
-            if(!ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
@@ -93,7 +93,7 @@ namespace PJ_XET_THI_DUA_KHEN_THUONG.Controllers
             }
 
             var resut = await _criteriaService.DeleteAsync(id);
-            if(!resut)
+            if (!resut)
             {
                 return NotFound("Không xóa thành công");
             }
