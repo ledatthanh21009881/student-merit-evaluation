@@ -1,9 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using PJ_XET_THI_DUA_KHEN_THUONG.Models.DTOs.request;
 using PJ_XET_THI_DUA_KHEN_THUONG.Services;
 
 namespace PJ_XET_THI_DUA_KHEN_THUONG.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("api/[controller]")]
     public class CriteriaFormController : ControllerBase
@@ -99,6 +101,50 @@ namespace PJ_XET_THI_DUA_KHEN_THUONG.Controllers
             catch (Exception ex)
             {
                 return BadRequest(new { message = ex.Message });
+            }
+        }
+
+        [HttpGet("active")]
+        public async Task<IActionResult> GetActiveForms()
+        {
+            try
+            {
+                var result = await _criteriaFormService.GetActiveFormsAsync();
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = "Đã xảy ra lỗi khi truy xuất biểu mẫu đang hoạt động.", error = ex.Message });
+            }
+        }
+
+        [HttpGet("academic-year/{year}")]
+        public async Task<IActionResult> GetByAcademicYear(int year)
+        {
+            try
+            {
+                var result = await _criteriaFormService.GetByAcademicYearAsync(year);
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = "Đã xảy ra lỗi khi truy xuất biểu mẫu theo năm học.", error = ex.Message });
+            }
+        }
+
+        [HttpGet("filter")]
+        public async Task<IActionResult> GetByFilter(
+            [FromQuery] int? academicYear = null,
+            [FromQuery] string? semester = null)
+        {
+            try
+            {
+                var result = await _criteriaFormService.GetByFilterAsync(academicYear, semester);
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = "Đã xảy ra lỗi khi lọc biểu mẫu.", error = ex.Message });
             }
         }
     }

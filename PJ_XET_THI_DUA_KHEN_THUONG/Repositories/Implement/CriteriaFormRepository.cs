@@ -85,5 +85,71 @@ namespace PJ_XET_THI_DUA_KHEN_THUONG.Repositories.Implement
                             && cf.Semester.ToLower() == semester.ToLower()
                             && cf.CriteriaFormID != excludeId);
         }
+
+        /**
+         * Lấy danh sách các biểu mẫu đang hoạt động
+         * @return Danh sách các biểu mẫu CriteriaForm đang hoạt động
+         * */
+        public async Task<List<CriteriaForm>> GetActiveFormsAsync()
+        {
+            return await _context.CriteriaForms
+                .Where(cf => cf.IsActive)
+                .Include(cf => cf.Criterias)
+                .Include(cf => cf.FormTimelines)
+                .ToListAsync();
+        }
+
+        /**
+         * Lấy danh sách các biểu mẫu theo năm học
+         * @param academicYear Năm học để lọc
+         * @return Danh sách các biểu mẫu CriteriaForm theo năm học
+         */
+        public async Task<List<CriteriaForm>> GetByAcademicYearAsync(int academicYear)
+        {
+            return await _context.CriteriaForms
+                .Where(cf => cf.AcademicYearStart == academicYear)
+                .Include(cf => cf.Criterias)
+                .Include(cf => cf.FormTimelines)
+                .ToListAsync();
+        }
+
+        public async Task RemoveCriteriaLinksAsync(int criteriaFormId)
+        {
+            var form = await _context.CriteriaForms
+                .Include(cf => cf.Criterias)
+                .FirstOrDefaultAsync(cf => cf.CriteriaFormID == criteriaFormId);
+            
+            if (form != null && form.Criterias.Any())
+            {
+                form.Criterias.Clear();
+                await _context.SaveChangesAsync();
+            }
+        }
+
+        /**
+         * Lọc form tiêu chí theo năm hoặc học kỳ
+         */
+        public async Task<List<CriteriaForm>> GetByFilterAsync(int? academicYear, string? semester)
+        {
+            var query = _context.CriteriaForms
+                .Include(cf => cf.Criterias)
+                    .ThenInclude(c => c.CriteriaType)
+                .Include(cf => cf.FormTimelines)
+                .AsQueryable();
+
+            // Lọc theo năm học nếu có
+            if (academicYear.HasValue)
+            {
+                query = query.Where(cf => cf.AcademicYearStart == academicYear.Value);
+            }
+
+            // Lọc theo học kỳ nếu có
+            if (!string.IsNullOrEmpty(semester))
+            {
+                query = query.Where(cf => cf.Semester.ToLower() == semester.ToLower());
+            }
+
+            return await query.ToListAsync();
+        }
     }
 }

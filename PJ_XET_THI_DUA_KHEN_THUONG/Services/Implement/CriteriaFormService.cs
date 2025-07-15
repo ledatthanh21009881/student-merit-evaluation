@@ -248,9 +248,30 @@ namespace PJ_XET_THI_DUA_KHEN_THUONG.Services.Implement
             // Xóa timeline trước
             await _formTimelineRepository.DeleteByFormIdAsync(id);
 
+            // Xóa liên kết với criteria
+            await _criteriaFormRepository.RemoveCriteriaLinksAsync(id);
+
             // Xóa form
             await _criteriaFormRepository.DeleteAsync(form);
             return true;
+        }
+
+        public async Task<List<CriteriaFormResponse>> GetActiveFormsAsync()
+        {
+            var forms = await _criteriaFormRepository.GetActiveFormsAsync();
+            return forms.Select(MapToResponse).ToList();
+        }
+
+        public async Task<List<CriteriaFormResponse>> GetByAcademicYearAsync(int academicYear)
+        {
+            var forms = await _criteriaFormRepository.GetByAcademicYearAsync(academicYear);
+            return forms.Select(MapToResponse).ToList();
+        }
+
+        public async Task<List<CriteriaFormResponse>> GetByFilterAsync(int? academicYear, string? semester)
+        {
+            var forms = await _criteriaFormRepository.GetByFilterAsync(academicYear, semester);
+            return forms.Select(MapToResponse).ToList();
         }
 
     }

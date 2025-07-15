@@ -10,6 +10,10 @@ namespace PJ_XET_THI_DUA_KHEN_THUONG.Services
         Task CreateAsync(CriteriaFormRequest request);
         Task UpdateAsync(int id, CriteriaFormRequest request);
         Task<bool> DeleteAsync(int id);
+        Task<List<CriteriaFormResponse>> GetActiveFormsAsync();
+        Task<List<CriteriaFormResponse>> GetByAcademicYearAsync(int academicYear);
+
+        Task<List<CriteriaFormResponse>> GetByFilterAsync(int? academicYear, string? semester);
 
     }
 }
