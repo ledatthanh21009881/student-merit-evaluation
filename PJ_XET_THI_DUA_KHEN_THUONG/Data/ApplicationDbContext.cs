@@ -29,6 +29,9 @@ namespace PJ_XET_THI_DUA_KHEN_THUONG.Data
 
         public DbSet<ActivityCriteria> ActivityCriteria { get; set; }
 
+        public DbSet<Evaluations> Evaluations { get; set; }
+        public DbSet<EvaluationDetails> EvaluationDetails { get; set; }
+
 
         // config relationships for criteria
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -109,6 +112,13 @@ namespace PJ_XET_THI_DUA_KHEN_THUONG.Data
                 .HasOne(ac => ac.Criteria)
                 .WithMany(c => c.ActivityCriterias)
                 .HasForeignKey(ac => ac.CriteriaID);
+
+            // Cấu hình liên kết nhiều nhiều giữa Evaluations với EvaluationDetails
+
+            modelBuilder.Entity<EvaluationDetails>()
+                .HasOne(ed => ed.Evaluation)
+                .WithMany(e => e.Details)
+                .HasForeignKey(ed => ed.EvaluationID);
 
             base.OnModelCreating(modelBuilder);
         }
