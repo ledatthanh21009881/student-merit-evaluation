@@ -1,9 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using PJ_XET_THI_DUA_KHEN_THUONG.Models.DTOs.request;
 using PJ_XET_THI_DUA_KHEN_THUONG.Services;
 
 namespace PJ_XET_THI_DUA_KHEN_THUONG.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("api/[controller]")]
     public class CriteriaController : ControllerBase
