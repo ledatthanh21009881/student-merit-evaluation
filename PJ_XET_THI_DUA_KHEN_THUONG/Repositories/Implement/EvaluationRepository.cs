@@ -14,7 +14,7 @@ namespace PJ_XET_THI_DUA_KHEN_THUONG.Repositories.Implement
 
         public async Task<IEnumerable<Evaluations>> GetAllAsync() => await _context.Evaluations.Include(e => e.Details).ToListAsync();
         public async Task<Evaluations?> GetByIdAsync(int id) => await _context.Evaluations.Include(e => e.Details).FirstOrDefaultAsync(e => e.EvaluationsID == id);
-        public async Task<Evaluations?> GetByUserFormSemesterAsync(int userId, int formId, int semester) => await _context.Evaluations.Include(e => e.Details).FirstOrDefaultAsync(e => e.UserID == userId && e.CriteriaFormID == formId && e.Semester == semester);
+        public async Task<Evaluations?> GetByUserFormSemesterAsync(int userId, int formId, string semester) => await _context.Evaluations.Include(e => e.Details).FirstOrDefaultAsync(e => e.UserID == userId && e.CriteriaFormID == formId && e.Semester == semester);
         public async Task AddAsync(Evaluations evaluation)
         {
             _context.Evaluations.Add(evaluation);
@@ -38,5 +38,6 @@ namespace PJ_XET_THI_DUA_KHEN_THUONG.Repositories.Implement
                 await _context.SaveChangesAsync();
             }
         }
+        public IQueryable<Evaluations> GetQueryable() => _context.Evaluations;
     }
 } 

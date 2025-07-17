@@ -9,8 +9,9 @@ namespace PJ_XET_THI_DUA_KHEN_THUONG.Services
     {
         Task<List<EvaluationResponse>> GetAllAsync();
         Task<EvaluationResponse?> GetByIdAsync(int id);
-        Task<EvaluationResponse?> GetByUserFormSemesterAsync(int userId, int formId, int semester);
+        Task<EvaluationResponse?> GetByUserFormSemesterAsync(int userId, int formId, string semester);
         Task AddOrUpdateAsync(EvaluationRequest request);
         Task DeleteAsync(int id);
+        Task<List<EvaluationAdminFilterResponse>> AdminFilterAsync(EvaluationAdminFilterRequest request);
     }
 } 

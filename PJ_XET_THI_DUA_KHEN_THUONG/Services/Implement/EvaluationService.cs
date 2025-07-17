@@ -5,13 +5,16 @@ using PJ_XET_THI_DUA_KHEN_THUONG.Repositories;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using PJ_XET_THI_DUA_KHEN_THUONG.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace PJ_XET_THI_DUA_KHEN_THUONG.Services.Implement
 {
     public class EvaluationService : IEvaluationService
     {
         private readonly IEvaluationRepository _repo;
-        public EvaluationService(IEvaluationRepository repo) { _repo = repo; }
+        private readonly ApplicationDbContext _context;
+        public EvaluationService(IEvaluationRepository repo, ApplicationDbContext context) { _repo = repo; _context = context; }
 
         public async Task<List<EvaluationResponse>> GetAllAsync()
         {
@@ -25,7 +28,7 @@ namespace PJ_XET_THI_DUA_KHEN_THUONG.Services.Implement
             return e == null ? null : MapToResponse(e);
         }
 
-        public async Task<EvaluationResponse?> GetByUserFormSemesterAsync(int userId, int formId, int semester)
+        public async Task<EvaluationResponse?> GetByUserFormSemesterAsync(int userId, int formId, string semester)
         {
             var e = await _repo.GetByUserFormSemesterAsync(userId, formId, semester);
             return e == null ? null : MapToResponse(e);
@@ -104,6 +107,29 @@ namespace PJ_XET_THI_DUA_KHEN_THUONG.Services.Implement
                     Note = d.Note
                 }).ToList()
             };
+        }
+
+        public async Task<List<EvaluationAdminFilterResponse>> AdminFilterAsync(EvaluationAdminFilterRequest request)
+        {
+            var query = from e in _repo.GetQueryable()
+                        join u in _context.Users on e.UserID equals u.UserID
+                        join f in _context.CriteriaForms on e.CriteriaFormID equals f.CriteriaFormID
+                        where f.AcademicYearStart == request.AcademicYearStart
+                           && e.Semester.ToString().Contains(request.Semester)
+                        select new EvaluationAdminFilterResponse
+                        {
+                            UserID = u.UserID,
+                            LastName = u.LastName,
+                            FirstName = u.FirstName,
+                            CriteriaFormID = f.CriteriaFormID,
+                            FormName = f.FormName,
+                            AcademicYearStart = f.AcademicYearStart,
+                            Semester = e.Semester.ToString(),
+                            EvaluationID = e.EvaluationsID,
+                            Status = e.Status,
+                            Classification = e.Classification
+                        };
+            return await query.ToListAsync();
         }
     }
 } 
