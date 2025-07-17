@@ -120,6 +120,27 @@ namespace PJ_XET_THI_DUA_KHEN_THUONG.Data
                 .WithMany(e => e.Details)
                 .HasForeignKey(ed => ed.EvaluationID);
 
+            // User - Evaluations relationship (1-N)
+            modelBuilder.Entity<Evaluations>()
+                .HasOne(e => e.User)
+                .WithMany(u => u.Evaluations)
+                .HasForeignKey(e => e.UserID)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            // CriteriaForm - Evaluations relationship (1-N)
+            modelBuilder.Entity<Evaluations>()
+                .HasOne(e => e.CriteriaForm)
+                .WithMany()
+                .HasForeignKey(e => e.CriteriaFormID)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            // Criteria - EvaluationDetails relationship (1-N)
+            modelBuilder.Entity<EvaluationDetails>()
+                .HasOne(ed => ed.Criteria)
+                .WithMany()
+                .HasForeignKey(ed => ed.CriteriaID)
+                .OnDelete(DeleteBehavior.Restrict);
+
             base.OnModelCreating(modelBuilder);
         }
     }

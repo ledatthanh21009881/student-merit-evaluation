@@ -29,6 +29,8 @@ namespace PJ_XET_THI_DUA_KHEN_THUONG.Models.Entities
 
         // Navigation
         public ICollection<Accounts> Accounts { get; set; } = new List<Accounts>();
+        public virtual ICollection<Evaluations> Evaluations { get; set; } = new List<Evaluations>();
+
         public virtual ICollection<ActivityRegistration> ActivityRegistrations { get; set; }
     }
 }
