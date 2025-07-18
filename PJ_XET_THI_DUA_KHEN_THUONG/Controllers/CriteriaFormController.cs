@@ -147,5 +147,20 @@ namespace PJ_XET_THI_DUA_KHEN_THUONG.Controllers
                 return StatusCode(500, new { message = "Đã xảy ra lỗi khi lọc biểu mẫu.", error = ex.Message });
             }
         }
+
+        [HttpGet("{id}/criteria")]
+        public async Task<IActionResult> GetCriteriaByFormId(int id)
+        {
+            try
+            {
+                var result = await _criteriaFormService.GetCriteriaTreeByFormIdAsync(id);
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = "Lỗi khi lấy tiêu chí từ biểu mẫu.", error = ex.Message });
+            }
+        }
+
     }
 }

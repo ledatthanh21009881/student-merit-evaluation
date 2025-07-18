@@ -7,6 +7,8 @@ namespace PJ_XET_THI_DUA_KHEN_THUONG.Services
     {
         Task<List<CriteriaFormResponse>> GetAllAsync();
         Task<CriteriaFormResponse?> GetByIdAsync(int id);
+        Task<List<CriteriaResponse>> GetCriteriaTreeByFormIdAsync(int criteriaFormId);
+
         Task CreateAsync(CriteriaFormRequest request);
         Task UpdateAsync(int id, CriteriaFormRequest request);
         Task<bool> DeleteAsync(int id);

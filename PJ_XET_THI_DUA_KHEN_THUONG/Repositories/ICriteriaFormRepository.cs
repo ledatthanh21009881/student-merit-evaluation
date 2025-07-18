@@ -14,6 +14,7 @@ namespace PJ_XET_THI_DUA_KHEN_THUONG.Repositories
         Task<bool> ExistsByNameAsync(string formName, int academicYear, string semester, int excludeId);
         Task<List<CriteriaForm>> GetActiveFormsAsync();
         Task<List<CriteriaForm>> GetByAcademicYearAsync(int academicYear);
+        Task<List<int>> GetCriteriaIdsByFormIdAsync(int formId);
 
         // Xóa liên kết với criteria
         Task RemoveCriteriaLinksAsync(int criteriaFormId);

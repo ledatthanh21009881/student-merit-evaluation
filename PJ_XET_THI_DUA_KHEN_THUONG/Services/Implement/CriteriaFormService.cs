@@ -274,5 +274,50 @@ namespace PJ_XET_THI_DUA_KHEN_THUONG.Services.Implement
             return forms.Select(MapToResponse).ToList();
         }
 
+        public async Task<List<CriteriaResponse>> GetCriteriaTreeByFormIdAsync(int criteriaFormId)
+        {
+            // Lấy danh sách ID tiêu chí của form
+            var criteriaIds = await _criteriaFormRepository.GetCriteriaIdsByFormIdAsync(criteriaFormId);
+
+            // Lấy tất cả tiêu chí, lọc theo danh sách ID và trạng thái hoạt động
+            var allCriterias = await _criteriaRepository.GetAllCriteriaAsync();
+            var criterias = allCriterias
+                .Where(c => criteriaIds.Contains(c.CriteriaID) && c.IsActive)
+                .ToList();
+
+            // Xây dựng cây tiêu chí (level 1 là cha, các tiêu chí con có ParentID trùng với cha)
+            var result = criterias
+                .Where(c => c.Level == 1)
+                .Select(parent => new CriteriaResponse
+                {
+                    CriteriaID = parent.CriteriaID,
+                    CriteriaName = parent.CriteriaName,
+                    MaxScore = parent.MaxScore,
+                    Description = parent.Description,
+                    Level = parent.Level,
+                    IsStudentScored = parent.IsStudentScored,
+                    IsAdminScored = parent.IsAdminScored,
+                    IsUploadOnly = parent.IsUploadOnly,
+                    IsActive = parent.IsActive,
+                    Children = criterias
+                        .Where(c => c.ParentID == parent.CriteriaID)
+                        .Select(child => new CriteriaResponse
+                        {
+                            CriteriaID = child.CriteriaID,
+                            CriteriaName = child.CriteriaName,
+                            MaxScore = child.MaxScore,
+                            Description = child.Description,
+                            Level = child.Level,
+                            IsStudentScored = child.IsStudentScored,
+                            IsAdminScored = child.IsAdminScored,
+                            IsUploadOnly = child.IsUploadOnly,
+                            IsActive = child.IsActive
+                        }).ToList()
+                }).ToList();
+
+            return result;
+        }
+
+
     }
 }

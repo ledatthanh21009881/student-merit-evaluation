@@ -151,5 +151,15 @@ namespace PJ_XET_THI_DUA_KHEN_THUONG.Repositories.Implement
 
             return await query.ToListAsync();
         }
+
+        public async Task<List<int>> GetCriteriaIdsByFormIdAsync(int formId)
+        {
+            return await _context.CriteriaForms
+                .Where(cf => cf.CriteriaFormID == formId)
+                .SelectMany(cf => cf.Criterias.Select(c => c.CriteriaID))
+                .ToListAsync();
+        }
+
+
     }
 }
