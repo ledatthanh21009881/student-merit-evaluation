@@ -49,6 +49,7 @@ builder.Services.AddScoped<IFormTimelineRepository, FormTimelineRepository>();
 builder.Services.AddScoped<IActivityRepository, ActivityRepository>();
 builder.Services.AddScoped<IActivityRegistrationRepository, ActivityRegistrationRepository>();
 builder.Services.AddScoped<IEvaluationRepository, EvaluationRepository>();
+builder.Services.AddScoped<IUserRepository, UserRepository>();
 
 //builder.Services.AddScoped<IActivityCustomRepository, ActivityCustomRepository > ();
 
@@ -60,7 +61,7 @@ builder.Services.AddScoped<ICriteriaFormService, CriteriaFormService>();
 builder.Services.AddScoped<IActivitiesService, ActivitiesService>();
 builder.Services.AddScoped<IActivityRegistrationService, ActivityRegistrationService>();
 builder.Services.AddScoped<IEvaluationService, EvaluationService>();
-
+builder.Services.AddScoped<IUserService, UserService>();
 
 // ===== Inject Helper =====
 

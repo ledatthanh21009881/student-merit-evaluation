@@ -12,7 +12,7 @@ namespace PJ_XET_THI_DUA_KHEN_THUONG.Models.Entities
         public int EvaluationsID { get; set; }
         public int UserID { get; set; }
         public int CriteriaFormID { get; set; }
-        public int Semester { get; set; }
+        public string Semester { get; set; }
         public int? TotalScore { get; set; }
         [MaxLength(255)]
         public string? Note { get; set; }

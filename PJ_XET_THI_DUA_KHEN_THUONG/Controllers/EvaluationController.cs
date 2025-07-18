@@ -26,7 +26,7 @@ namespace PJ_XET_THI_DUA_KHEN_THUONG.Controllers
         }
 
         [HttpGet("user/{userId}/form/{formId}/semester/{semester}")]
-        public async Task<IActionResult> GetByUserFormSemester(int userId, int formId, int semester)
+        public async Task<IActionResult> GetByUserFormSemester(int userId, int formId, string semester)
         {
             var result = await _service.GetByUserFormSemesterAsync(userId, formId, semester);
             if (result == null) return NotFound();
@@ -46,5 +46,12 @@ namespace PJ_XET_THI_DUA_KHEN_THUONG.Controllers
             await _service.DeleteAsync(id);
             return NoContent();
         }
+
+        [HttpPost("admin/filter")]
+public async Task<IActionResult> AdminFilter([FromBody] EvaluationAdminFilterRequest request)
+{
+    var result = await _service.AdminFilterAsync(request);
+    return Ok(result);
+}
     }
 } 
